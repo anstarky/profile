@@ -1,0 +1,11 @@
+.App {
+	text-align: center;
+	height: 100vh;
+
+	&_header {
+		background-color: #282c34;
+		display: flex;
+		justify-content: space-between;
+		color: white;
+	}
+}

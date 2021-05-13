@@ -1,0 +1,23 @@
+.school {
+	display: flex;
+	justify-content: space-between;
+
+	& p:last-child {
+		font-size: 24px;
+		color: lightgrey;
+	}
+}
+
+.education {
+	& p {
+		font-size: 28px;
+		font-weight: 700;
+		color: white;
+		margin-bottom: 20px;
+	}
+
+	& code {
+		font-size: 22px;
+		color: lightgray;
+	}
+}

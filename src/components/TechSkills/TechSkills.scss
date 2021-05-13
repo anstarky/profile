@@ -1,0 +1,10 @@
+.tech_skills {
+	h3 {
+		font-size: 25px;
+		margin-bottom: 20px;
+	}
+	& code {
+		font-size: 22px;
+		color: lightgray;
+	}
+}

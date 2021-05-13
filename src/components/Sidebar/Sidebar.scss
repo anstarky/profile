@@ -1,0 +1,88 @@
+.Sidebar {
+	background-color: #212121;
+	width: 25vw;
+	padding: 0 20px;
+	text-align: center;
+	min-height: 100vh;
+
+	&__photo {
+		width: 50%;
+		padding-top: 20px;
+	}
+
+	&__desc {
+		text-align: left;
+	}
+}
+section {
+	& h2 {
+		position: relative;
+		text-decoration: none;
+		display: inline-block;
+	}
+
+	& h2::after {
+		content: '';
+		width: 0;
+		border-bottom: 2px solid red;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		transition-property: width;
+		transition-duration: 0.4s;
+		transition-timing-function: ease-in-out;
+	}
+
+	& h2:hover::after {
+		width: 100%;
+	}
+}
+
+section:not(:last-child):after {
+	display: block;
+	content: '';
+	border-bottom: 2px solid red;
+	margin: 25px 0;
+}
+
+.main {
+	& h1 {
+		font-size: 42px;
+		line-height: 1;
+		margin-block-start: 0.5em;
+		margin-block-end: 0.5em;
+	}
+
+	& p {
+		font-size: 22px;
+		color: lightgrey;
+		margin-block-start: 0.5em;
+		margin-block-end: 0.5em;
+	}
+}
+
+.contacts {
+	& p {
+		color: lightgrey;
+
+		margin-block-start: 0.3em;
+		margin-block-end: 0.3em;
+	}
+
+	& a {
+		color: rgb(54, 187, 231);
+	}
+}
+
+.pers__info {
+	& p {
+		color: lightgrey;
+		margin-block-start: 0.3em;
+		margin-block-end: 0.3em;
+	}
+
+	& ul {
+		color: lightgrey;
+		margin-top: 0;
+	}
+}

@@ -1,0 +1,27 @@
+.content {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 100px;
+	min-height: 100vh;
+
+	& h2 {
+		font-size: 92px;
+		width: 100%;
+		padding-bottom: 50px;
+		margin: 30px 0;
+	}
+
+	& h2::after {
+		box-sizing: content-box;
+		display: block;
+		content: '';
+		width: 100%;
+		border-bottom: 2px solid red;
+	}
+}
+
+i {
+	font-size: 25px;
+	color: red;
+	padding-right: 25px;
+}
